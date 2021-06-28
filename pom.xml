@@ -11,6 +11,22 @@
         <module>data</module>
         <module>api</module>
     </modules>
+
+    <developers>
+        <developer>
+            <name>Hassanein Altememy</name>
+            <email>hassanein.altememy@gmail.com</email>
+            <roles>
+                <role>Candidate</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <properties>
+        <spring.boot.version>2.5.1</spring.boot.version>
+        <javax.validation.version>2.0.1.Final</javax.validation.version>
+        <assertj.version>3.20.2</assertj.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -22,9 +38,19 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.5.1</version>
+                <version>${spring.boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>${javax.validation.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
